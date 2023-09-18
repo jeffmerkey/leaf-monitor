@@ -2,10 +2,10 @@
 %define debug_package %{nil}
 
 Summary:          Leaf Server Console
-License:          Proprietary
+License:          LGPL
 Name:             leaf-monitor
 Version:          1.3
-Release:          1%{?dist}
+Release:          2%{?dist}
 
 URL:              http://www.icapsql.com/
 Source0:          %{name}-%{version}.tar.gz
