@@ -5,7 +5,7 @@ Summary:          Leaf Server Console
 License:          LGPL
 Name:             leaf-monitor
 Version:          1.3
-Release:          2%{?dist}
+Release:          1%{?dist}
 
 URL:              http://www.icapsql.com/
 Source0:          %{name}-%{version}.tar.gz
