@@ -3136,6 +3136,7 @@ int mysql_summary(int portal, LCTX *ctx)
 	snprintf(buf, sizeof(buf), "Peak Skipped/Second       :   %22s", w);
        	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
 
+#if 0
 	snprintf(buf, sizeof(buf), "Leaf Product License      :   %22s", ctx->license ? "VALID" : "UNLICENSED");
 	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
 	snprintf(buf, sizeof(buf), "License Key           %02X%02X%02X%02X-%02X%02X%02X%02X-%02X%02X%02X%02X%02X%02X",
@@ -3146,6 +3147,11 @@ int mysql_summary(int portal, LCTX *ctx)
 				ctx->license_data[12], ctx->license_data[13]); 
 	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
 	row++;
+#else
+	snprintf(buf, sizeof(buf), "Leaf Product License      :   %22s", "LGPL");
+	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
+#endif
+
 	ch = get_horizontal_frame(portal);
 	if (ch) {
 		for (y=2; y < (get_screen_cols() - 6); y++) {
