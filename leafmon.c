@@ -2518,6 +2518,7 @@ int display_leaf_summary(int portal, STATE *st, PSTATE *pr, LCTX *ctx, struct ne
 	snprintf(buf, sizeof(buf), "Peak Skipped/Second       :   %22s", w);
        	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
 
+#if 0
 	snprintf(buf, sizeof(buf), "Leaf Product License      :   %22s", ctx->license ? "VALID" : "UNLICENSED");
 	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
 	snprintf(buf, sizeof(buf), "License Key           %02X%02X%02X%02X-%02X%02X%02X%02X-%02X%02X%02X%02X%02X%02X",
@@ -2527,7 +2528,10 @@ int display_leaf_summary(int portal, STATE *st, PSTATE *pr, LCTX *ctx, struct ne
 				ctx->license_data[9], ctx->license_data[10], ctx->license_data[11],
 				ctx->license_data[12], ctx->license_data[13]); 
 	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
-
+#else
+	snprintf(buf, sizeof(buf), "Leaf Product License      :   %22s", "LGPL");
+	write_portal_cleol(portal, (const char *)buf, row++, 2, BRITEWHITE | BGBLUE);
+#endif
 	row++;
         write_portal_line(portal, row++, BRITEWHITE | BGBLUE);
 	snprintf(buf, sizeof(buf), "MYSQL %s", stats_ptr ? "Statistics" : "is OFFLINE");
