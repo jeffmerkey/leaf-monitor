@@ -1,9 +1,10 @@
 /***************************************************************************
 *
 *   Copyright(c) Jeff V. Merkey 1997-2020.  All rights reserved.
-*   Open CWorthy Look Alike Terminal Library.
+*   Open CWorthy Look Alike Terminal Library.  Licensed under the 
+*   Lesser GPL License v2.1
 *
-*   IFCON Linux Example Program
+*   LEAFCON c-icap-leaf server monitor program
 *
 **************************************************************************/
 
