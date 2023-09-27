@@ -1,0 +1,18 @@
+                              c-icap-leaf
+
+This is part of the c-icap server project. More information about c-icap
+server you can find here:
+   http://c-icap.sourceforge.net/
+
+Implements leaf console monitor for the leaf intercept module for the c-icap server. Currently the following services are implemented:
+  - leaf console monitor program for providing top-like server statistics and live statistics for the c-icap server and the leaf icap intercept module as well as statistics for the mysql storage server.
+
+For support, use the following resources:
+ - General discussion related to c-icap server:
+   c-icap-users@lists.sourceforge.net
+ - Basic installation and configuration instructions:
+   https://sourceforge.net/p/c-icap/wiki/configcicap/
+
+For more information see the file README.pdf for more detailed description of the 
+leaf monitor program and c-icap-leaf module and how they work and can be configured.
+
