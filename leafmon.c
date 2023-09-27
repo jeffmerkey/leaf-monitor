@@ -3441,7 +3441,7 @@ int build_network_menu(void)
 }
 
 #define CONFIG_NAME        "  Leaf Server Monitor for Linux"
-#define COPYRIGHT_NOTICE1  "  Copyright (c) 1997-2020 Leaf Linux. All Rights Reserved."
+#define COPYRIGHT_NOTICE1  "  Copyright (c) 1997-2023 Jeffrey V. Merkey. All Rights Reserved."
 #define COPYRIGHT_NOTICE2  "  "
 
 ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
