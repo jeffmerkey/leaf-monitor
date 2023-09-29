@@ -1909,6 +1909,8 @@ ULONG get_resp(ULONG num)
 
 #if (LINUX_UTIL)
 	  case F3:
+	  case 'Q':
+	  case 'q':
 #else
 	  case ESC:
 #endif
@@ -3484,6 +3486,8 @@ ULONG get_portal_resp(ULONG num)
 
 #if (LINUX_UTIL)
 	  case F3:
+	  case 'Q':
+	  case 'q':
 #else
 	  case ESC:
 #endif

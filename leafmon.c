@@ -3336,7 +3336,7 @@ ULONG netmenuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
              return 0;
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-                  "  F1-Help  F3-Return to Menu  [terminal:%s]",
+                  "  F1-Help  F3/(Q)uit-Return to Menu  [terminal:%s]",
                   get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3359,7 +3359,7 @@ ULONG netmenuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           pthread_join(networkstat, NULL);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-		   "  F1-Help  F3-Exit  TAB-View Stats  "
+		   "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats  "
 		   "[terminal:%s]", get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3477,7 +3477,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           mask_portal(mainportal);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-                  "  F1-Help  F3-Return to Menu  [terminal:%s]",
+                  "  F1-Help  F3/(Q)uit-Return to Menu  [terminal:%s]",
                   get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3538,7 +3538,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           free_node_list(&np.list);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-		   "  F1-Help  F3-Exit  TAB-View Stats  "
+		   "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats  "
 		   "[terminal:%s]", get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3576,7 +3576,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           mask_portal(mainportal);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-                  "  F1-Help  F3-Return to Menu  [terminal:%s]",
+                  "  F1-Help  F3/(Q)uit-Return to Menu  [terminal:%s]",
                   get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3616,7 +3616,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           free_node_list(&np.list);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-		   "  F1-Help  F3-Exit  TAB-View Stats  "
+		   "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats  "
 		   "[terminal:%s]", get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3653,7 +3653,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           mask_portal(mainportal);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-                  "  F1-Help  F3-Return to Menu  [terminal:%s]",
+                  "  F1-Help  F3/(Q)uit-Return to Menu  [terminal:%s]",
                   get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3684,7 +3684,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           }
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-		   "  F1-Help  F3-Exit  TAB-View Stats  "
+		   "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats  "
 		   "[terminal:%s]", get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3721,7 +3721,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           mask_portal(mainportal);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-                  "  F1-Help  F3-Return to Menu  [terminal:%s]",
+                  "  F1-Help  F3/(Q)uit-Return to Menu  [terminal:%s]",
                   get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3744,7 +3744,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           pthread_join(cicapstat, NULL);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-		   "  F1-Help  F3-Exit  TAB-View Stats  "
+		   "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats  "
 		   "[terminal:%s]", get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3781,7 +3781,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           mask_portal(mainportal);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-                  "  F1-Help  F3-Return to Menu  [terminal:%s]",
+                  "  F1-Help  F3/(Q)uit-Return to Menu  [terminal:%s]",
                   get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3842,7 +3842,7 @@ ULONG menuFunction(NWSCREEN *screen, ULONG value, BYTE *option,
           free_node_list(&np.list);
 
           snprintf((char *)display_buffer, sizeof(display_buffer),
-		   "  F1-Help  F3-Exit  TAB-View Stats  "
+		   "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats  "
 		   "[terminal:%s]", get_term_name());
           write_screen_comment_line(get_console_screen(),
 				    (const char *)display_buffer,
@@ -3879,7 +3879,7 @@ ULONG menuKeyboardHandler(NWSCREEN *screen, ULONG key, ULONG index)
 	  if (mainportal)
 	  {
 	     snprintf((char *)display_buffer, sizeof(display_buffer),
-		      "  F1-Help  F3-Return to Menu  "
+		      "  F1-Help  F3/(Q)uit-Return to Menu  "
 		      "[terminal:%s]", get_term_name());
 	     write_screen_comment_line(get_console_screen(),
 				       (const char *)display_buffer,
@@ -3889,7 +3889,7 @@ ULONG menuKeyboardHandler(NWSCREEN *screen, ULONG key, ULONG index)
 	     get_portal_resp(mainportal);
 
              snprintf((char *)display_buffer, sizeof(display_buffer),
-                      "  F1-Help  F3-Exit  TAB-Switch to Stats "
+                      "  F1-Help  F3/(Q)uit-Exit  TAB-Switch to Stats "
 		      " [terminal:%s]", get_term_name());
              write_screen_comment_line(get_console_screen(),
 				       (const char *)display_buffer,
@@ -3982,7 +3982,7 @@ int main(int argc, char *argv[])
     put_string_cleol(get_console_screen(), (const char *)display_buffer, NULL, 2, header_attr);
 
     snprintf((char *)display_buffer, sizeof(display_buffer),
-             "  F1-Help  F3-Exit  TAB-View Stats "
+             "  F1-Help  F3/(Q)uit-Exit  TAB-View Stats "
 	     " [terminal:%s]", get_term_name());
     write_screen_comment_line(get_console_screen(),
 			      (const char *)display_buffer,
